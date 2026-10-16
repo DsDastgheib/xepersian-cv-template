@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.9.4)  11 OCT 2026 22:09
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.9.4)  16 OCT 2026 09:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,8 +7,8 @@ entering extended mode
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-08-10>
 (./altacv.cls
-Document Class: altacv 2024/01/11 AltaCV v1.7.1b, yet another alternative class
- for a resume/curriculum vitae| Forked by NicolasOmar.
+Document Class: altacv 2026/10/11 AltaCV v1.7.1b, Persian/Arabic RTL edition re
+designed by Codex (OpenAI).
 (c:/texlive/2026/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
 (c:/texlive/2026/texmf-dist/tex/latex/base/size11.clo
@@ -1046,41 +1046,20 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             XB Yas/B scale = 1.0.
-
-
-Package fontspec Info: 
-(fontspec)             XB Yas/I scale = 1.0.
-
-
-Package fontspec Info: 
-(fontspec)             XB Yas/BI scale = 1.0.
-
-
-Package fontspec Info: 
 (fontspec)             Font family 'XBYas(0)' created for font 'XB Yas' with
 (fontspec)             options
-(fontspec)             [RawFeature={script=arab},Ligatures=PersianTeX,Scale=1.0
-].
+(fontspec)             [RawFeature={script=arab},Ligatures=PersianTeX,Path =
+(fontspec)             fonts/,Extension = .ttf,Scale = 1.0].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1.0]"XB
-(fontspec)             Yas/OT:script=latn;language=dflt;script=arab;mapping=per
-sian-tex-text;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1.0]"XB
-(fontspec)             Yas/B/OT:script=latn;language=dflt;script=arab;mapping=p
-ersian-tex-text;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[1.0]"XB
-(fontspec)             Yas/I/OT:script=latn;language=dflt;script=arab;mapping=p
-ersian-tex-text;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->s*[1.0]"XB
-(fontspec)             Yas/BI/OT:script=latn;language=dflt;script=arab;mapping=
-persian-tex-text;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1.0]"[fonts/XB
+(fontspec)             Yas.ttf]/OT:script=latn;language=dflt;script=arab;mappin
+g=persian-tex-text;"
 
 LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 54.
+(Font)              scaled to size 10.95pt on input line 75.
 
 Package fontspec Info: 
 (fontspec)             Font family 'TeXGyrePagella(0)' created for font 'TeX
@@ -1116,32 +1095,32 @@ ext;"
 (fontspec)             Pagella/BI/OT:script=latn;language=dflt;+smcp;mapping=te
 x-text;"
 
-LaTeX Info: Redefining \latinfont on input line 55.
+LaTeX Info: Redefining \latinfont on input line 76.
 
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-Package hyperref Info: Link coloring OFF on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+Package hyperref Info: Link coloring OFF on input line 86.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -1156,14 +1135,14 @@ Package hyperref Info: Link coloring OFF on input line 65.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(39.83368pt, 517.84052pt, 39.83368pt)
-* v-part:(T,H,B)=(34.14322pt, 776.7604pt, 34.14322pt)
+* v-part:(T,H,B)=(21.33955pt, 802.36774pt, 21.33955pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=517.84052pt
-* \textheight=776.7604pt
+* \textheight=802.36774pt
 * \oddsidemargin=-32.43631pt
 * \evensidemargin=-32.43631pt
-* \topmargin=-75.12677pt
+* \topmargin=-87.93044pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -1184,33 +1163,35 @@ Package hyperref Info: Link coloring OFF on input line 65.
 File: khayyam.png Graphic file (type bmp)
 <khayyam.png>
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 79.
+(Font)              <6> on input line 100.
 LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
-(Font)              scaled to size 28.0pt on input line 79.
+(Font)              scaled to size 28.0pt on input line 100.
+
+LaTeX Font Warning: Font shape `TU/XBYas(0)/b/n' undefined
+(Font)              using `TU/XBYas(0)/m/n' instead on input line 100.
+
+LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 100.
 LaTeX Font Info:    Font shape `TU/XBYas(0)/b/n' will be
-(Font)              scaled to size 28.0pt on input line 79.
+(Font)              scaled to size 12.0pt on input line 100.
 LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 79.
+(Font)              scaled to size 10.0pt on input line 100.
+LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
+(Font)              scaled to size 17.0pt on input line 109.
 LaTeX Font Info:    Font shape `TU/XBYas(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 79.
+(Font)              scaled to size 17.0pt on input line 109.
 LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 79.
-LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
-(Font)              scaled to size 17.0pt on input line 88.
+(Font)              scaled to size 13.0pt on input line 117.
 LaTeX Font Info:    Font shape `TU/XBYas(0)/b/n' will be
-(Font)              scaled to size 17.0pt on input line 88.
+(Font)              scaled to size 13.0pt on input line 117.
 LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
-(Font)              scaled to size 13.0pt on input line 96.
+(Font)              scaled to size 10.5pt on input line 156.
 LaTeX Font Info:    Font shape `TU/XBYas(0)/b/n' will be
-(Font)              scaled to size 13.0pt on input line 96.
+(Font)              scaled to size 10.95pt on input line 159.
 LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
-(Font)              scaled to size 10.5pt on input line 135.
-LaTeX Font Info:    Font shape `TU/XBYas(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 138.
+(Font)              scaled to size 14.4pt on input line 177.
 LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 156.
-LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 167.
+(Font)              scaled to size 9.0pt on input line 188.
 [1
 
 ] (./main.aux)
@@ -1218,16 +1199,20 @@ LaTeX Font Info:    Font shape `TU/XBYas(0)/m/n' will be
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-08-10>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32354 strings out of 467745
- 707610 string characters out of 5425967
- 1189600 words of memory out of 5000000
- 60898 multiletter control sequences out of 15000+600000
- 631926 words of font info for 107 fonts, out of 8000000 for 9000
+ 32323 strings out of 467745
+ 706579 string characters out of 5425967
+ 1189576 words of memory out of 5000000
+ 60884 multiletter control sequences out of 15000+600000
+ 631822 words of font info for 94 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 125i,7n,121p,1206b,1046s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,7n,121p,1214b,1046s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (1 page).
