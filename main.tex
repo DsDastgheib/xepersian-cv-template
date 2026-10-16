@@ -1,0 +1,192 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+% Add darkmode here to use the alternative palette.
+\documentclass[11pt,a4paper,ragged2e,withhyper,rtl]{altacv}
+
+\geometry{left=1.4cm,right=1.4cm,top=0.75cm,bottom=0.75cm,columnsep=0.85cm}
+\usepackage{paracol}
+
+\ifdarkmode
+  \definecolor{PrimaryColor}{HTML}{EEE4D4}
+  \definecolor{SecondaryColor}{HTML}{78C6BE}
+  \definecolor{ThirdColor}{HTML}{E8B66B}
+  \definecolor{BodyColor}{HTML}{D6D2CA}
+  \definecolor{EmphasisColor}{HTML}{F5F0E8}
+  \definecolor{BackgroundColor}{HTML}{18282B}
+\else
+  \definecolor{PrimaryColor}{HTML}{173F48}
+  \definecolor{SecondaryColor}{HTML}{236C70}
+  \definecolor{ThirdColor}{HTML}{C58A39}
+  \definecolor{BodyColor}{HTML}{45494A}
+  \definecolor{EmphasisColor}{HTML}{263A3E}
+  \definecolor{BackgroundColor}{HTML}{FAF7F0}
+\fi
+\colorlet{name}{PrimaryColor}
+\colorlet{tagline}{SecondaryColor}
+\colorlet{heading}{PrimaryColor}
+\colorlet{headingrule}{ThirdColor}
+\colorlet{subheading}{SecondaryColor}
+\colorlet{accent}{SecondaryColor}
+\colorlet{emphasis}{EmphasisColor}
+\colorlet{body}{BodyColor}
+\pagecolor{BackgroundColor}
+
+% Load xepersian LAST, after every other package, so bidi can patch them.
+\usepackage{xepersian}
+% \IfFontExistsTF{XB Yas}{%
+%   \settextfont[Path = fonts/,
+%     Extension = .ttf,
+%     Scale=1.0]{XB Yas}
+% }{%
+%   \IfFontExistsTF{Amiri}{\settextfont[Scale=1.0]{Amiri}}{%
+%     \IfFontExistsTF{Noto Naskh Arabic}{\settextfont[Scale=1.0]{Noto Naskh Arabic}}{%
+%       \IfFontExistsTF{Tahoma}{\settextfont[Scale=1.0]{Tahoma}}{%
+%         \ClassError{altacv}{No Persian/Arabic font found}{Install XB Yas, Amiri or Noto Naskh Arabic, then compile again.}
+%       }
+%     }
+%   }
+% }
+\IfFileExists{fonts/XB Yas.ttf}{%
+    \settextfont[
+        Path = fonts/,
+        Extension = .ttf,
+        Scale = 1.0
+    ]{XB Yas}%
+}{%
+    \IfFontExistsTF{Amiri}{%
+        \settextfont[Scale=1.0]{Amiri}%
+    }{%
+        \IfFontExistsTF{Noto Naskh Arabic}{%
+            \settextfont[Scale=1.0]{Noto Naskh Arabic}%
+        }{%
+            \IfFontExistsTF{Tahoma}{%
+                \settextfont[Scale=1.0]{Tahoma}%
+            }{%
+                \ClassError{altacv}
+                    {No Persian/Arabic font found}
+                    {Upload XB Yas.ttf or install another Persian/Arabic font, then compile again.}%
+            }%
+        }%
+    }%
+}
+\setlatintextfont{TeX Gyre Pagella}
+\linespread{1.12}
+\renewcommand{\locationname}{مکان}
+\renewcommand{\datename}{زمان}
+\hypersetup{pdftitle={رزومهٔ خیام نیشابوری},pdfauthor={عمر خیام نیشابوری}}
+
+% Sizes live in the class's rtl defaults; override any of them here, e.g.:
+% \renewcommand{\namefont}{\fontsize{26}{34}\selectfont\bfseries}
+% Wrap inline English, URLs and Latin numbers in \cvlatin{...}.
+% Persian and Arabic labels can be entered directly as UTF-8.
+
+\begin{document}
+\name{عُمَر خَیّام نیشابوری}
+\tagline{ریاضی‌دان، ستاره‌شناس و شاعر؛ همه‌چیزدانِ نیشابور}
+\photoL{3.3cm}{khayyam}
+\personalinfo{%
+  غیاث‌الدین ابوالفتح عُمَر بن ابراهیم خَیّام نیشابوری\par
+  \smallskip
+  \location{نیشابور، ایران}
+  \printinfo{\faClock}{قرن پنجم و ششم هجری}\par
+  \smallskip
+  % Fictional contact for the playful sample; linked fields stay LTR.
+  \email{khayyam@example.com}
+  \printinfo{\faBook}{رباعیات؛ نسخهٔ کاغذی لطفاً!}
+}
+\makecvheader
+
+% Physical left column: sidebar (30%); right column: main CV (70%).
+% Start writing in column 1 to put the main Persian content on the right.
+% Both columns can still flow onto later pages when the CV grows.
+\columnratio{0.30}
+\begin{paracol}{2}
+\switchcolumn[1]
+
+\cvsection{دربارهٔ من}
+\begin{quote}
+روزها معادله حل می‌کنم، شب‌ها ستاره می‌شمارم و بین این دو، رباعی می‌گویم.
+به پروژه‌هایی علاقه دارم که یا زمان را دقیق‌تر کنند یا زندگی را خوش‌تر؛
+اگر هر دو شد، چه بهتر!
+\end{quote}
+
+\cvsection{تجربه‌ها}
+\cvevent{پژوهشگرِ آسمان و تقویم}{همکاری در اصلاح تقویم جلالی}{دورهٔ سلجوقی}{اصفهان}
+\begin{itemize}
+  \item رصد و محاسبه برای هماهنگی تقویم با گردش فصل‌ها.
+  \item کار گروهی با اهل نجوم؛ جلسه‌ها زیر آسمان برگزار می‌شد!
+\end{itemize}
+\divider
+
+\cvevent{حل‌کنندهٔ مسائل سخت}{پژوهش در جبر و هندسه}{سال‌های پژوهش}{سمرقند و نیشابور}
+\begin{itemize}
+  \item بررسی معادلات درجهٔ سوم با کمک هندسه و مقاطع مخروطی.
+  \item تبدیل پرسش‌های پیچیده به مسئله‌هایی که می‌شود درباره‌شان فکر کرد.
+\end{itemize}
+
+\cvsection{پروژه‌های منتخب}
+\cvevent{تقویم جلالی}{وقتی نوروز باید سرِ وقت برسد}{}{ایران}
+\begin{itemize}
+  \item دقت در حساب روزها؛ بهار با حدس و گمان شروع نمی‌شود.
+\end{itemize}
+\divider
+
+\cvevent{رسالهٔ جبر}{هندسه در خدمت معادله‌ها}{}{}
+\begin{itemize}
+  \item مطالعهٔ معادلات و جست‌وجوی راه‌حل‌های هندسی.
+\end{itemize}
+\divider
+
+\cvevent{رباعیاتِ منسوب به خیام}{چهار مصراع، به اندازهٔ یک جهان}{}{}
+\begin{itemize}
+  \item تأمل در زمان، زندگی و لذتِ همین لحظه؛ با کمترین تعداد کلمات.
+\end{itemize}
+
+\cvsection{آموخته‌ها}
+جبر، هندسه، نجوم و فلسفه؛ همراه با تمرینِ پرسیدنِ «چرا؟».
+برای یاد گرفتن، هنوز هم یک مسئلهٔ خوب را به یک پاسخِ عجولانه ترجیح می‌دهم.
+
+\switchcolumn[0]
+
+\cvsection{جعبه‌ابزار}
+% /true highlights a tag; the default is an ordinary tag.
+\cvtags{جبر/true, هندسه/true, نجوم/true, فلسفه, شعر, تقویم, مقاطع مخروطی, رصد آسمان}
+
+\cvsection{مهارت‌ها}
+\cvskill{حل مسئله}{5}
+\smallskip
+\cvskill{Mathematics}{5}
+\smallskip
+\cvskill{نگاه به آسمان}{5}
+\smallskip
+\cvskill{کوتاه‌نویسی}{4.5}
+\smallskip
+\cvskill{جلسهٔ بی‌حاصل}{0.5}
+
+\cvsection{زبان‌ها}
+\cvlang{فارسی}{شعر و گفت‌وگو}\par
+\smallskip
+\cvlang{عربی}{نگارش علمی}\par
+\smallskip
+\cvlang{ریاضی}{بدون نیاز به مترجم}\par
+
+\cvsection{افتخارها}
+\cvachievement{\faCalendarCheck}{حسابِ روزها}{همکاری در تقویم جلالی}
+\medskip
+\cvachievement{\faFeather}{ماندگاریِ واژه‌ها}{رباعی‌هایی فراتر از زمان}
+
+\cvsection{پس از کار}
+تماشای آسمان، گپ با دوستان و پیدا کردنِ یک پرسش تازه برای فردا.
+
+\cvsection{برای همکاری}
+اگر مسئله‌تان دشوار است، خوشحال می‌شوم؛ اگر جلسه‌تان طولانی است، کمتر!
+
+\bigskip
+{\footnotesize\color{body!80}
+این رزومه یک نمونهٔ طنز با الهام از خیام است؛ شرح شغل‌ها و راه ارتباطی خیالی‌اند.\par}
+
+\end{paracol}
+\end{document}
